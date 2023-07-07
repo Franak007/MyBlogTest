@@ -23,3 +23,13 @@ symfony console make:migration
 symfony console doctrine:migrations:migrate
 
 symfony console make:controller
+
+symfony console debug:router
+
+composer require annotations
+
+symfony console security:hash-password "motsecret"
+
+symfony console make:registration-form
+
+symfony console make:crud
