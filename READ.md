@@ -18,3 +18,8 @@ git push -u origin main
 
 symfony console make:entity
 
+symfony console make:migration
+
+symfony console doctrine:migrations:migrate
+
+symfony console make:controller
