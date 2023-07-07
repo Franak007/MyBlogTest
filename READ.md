@@ -15,3 +15,6 @@ git remote add origin https://github.com/Franak007/MyBlogTest.git
 git branch -M main
 
 git push -u origin main
+
+symfony console make:entity
+
