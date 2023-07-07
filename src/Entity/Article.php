@@ -25,7 +25,7 @@ class Article
     #[ORM\ManyToOne(inversedBy: 'articles')]
     private ?User $user = null;
 
-    #[ORM\OneToMany(mappedBy: 'article', targetEntity: Comment::class)]
+    #[ORM\OneToMany(mappedBy: 'article', targetEntity: Comment::class, orphanRemoval: true)]
     private Collection $comments;
 
     public function __construct()
